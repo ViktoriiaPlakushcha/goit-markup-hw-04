@@ -98,7 +98,6 @@ main {
 }
 .page-nav .link:active {
     color: #404BBF;
-    text-decoration: underline;
 }
 .contacts {
     font-style: normal;
@@ -120,6 +119,13 @@ main {
 }
 .hero {
     background-color: #2E2F42;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url('/../images/people-office.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 188px 0;
 }
 .hero .page-title {
@@ -188,6 +194,21 @@ main {
 .team-list-box {
     padding: 32px 0;
 }
+.social-links-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.social-links-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+}
 .section-title {
     font-weight: 700;
     font-size: 36px;
@@ -214,6 +235,7 @@ main {
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    padding-bottom: 8px;
 }
 .portfolio-list-title {
     font-weight: 500;
@@ -245,6 +267,9 @@ border-bottom: 1px solid #E7E9FC;
 border-left: 1px solid #E7E9FC;
 border-right: 1px solid #E7E9FC;
 padding: 32px 16px;
+}
+.portfolio-list-item:hover {
+box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .page-ftr {
     background-color: #2E2F42;
